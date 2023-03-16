@@ -1,3 +1,9 @@
 local Whitelist = {1853224209}
+local p3I4 = game.Players.LocalPlayer
  
-return Whitelist
+for _,h in ipairs(W8T3L9ST) do
+   if p3I4.UserId == h then
+      return true
+   end
+end
+return false
