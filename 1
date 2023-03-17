@@ -1,9 +1,21 @@
-local Whitelist = {1853224209}
+local BasicAccess = {1853224209}
+local NormalAccess = {1853224209}
+local HighAccess = {1853224209}
 local p3I4 = game.Players.LocalPlayer
  
-for _,h in ipairs(Whitelist) do
+for _,h in ipairs(HighAccess) do
    if p3I4.UserId == h then
-      return true
+      return "High"
+   end
+end
+for _,h in ipairs(NormalAccess) do
+   if p3I4.UserId == h then
+      return "Normal"
+   end
+end
+for _,h in ipairs(BasicAccess) do
+   if p3I4.UserId == h then
+      return "Basic"
    end
 end
 return false
