@@ -1,0 +1,9 @@
+local A1 = {}
+
+function A1:Help()
+  print("Here Are all Commands, sent by doing :Help()")
+  print("---------------------------------------------")
+  print("Command:Help(),   Function: sents all the command name and function")
+end
+
+return A1
