@@ -1,0 +1,27 @@
+local c = {}
+
+function c:add(s1, s2)
+	return (s1 + s2)
+end
+
+function c:remove(s1, s2)
+	return (s1 - s2)
+end
+
+function c:times(s1, s2)
+	return (s1 * s2)
+end
+
+function c:devide(s1, s2)
+	return (s1 / s2)
+end
+
+function c:sqrt(s1)
+	return (math.sqrt(s1))
+end
+
+function c:percent(s1, percent)
+	return (s1 * (percent / 100))
+end
+
+return c
